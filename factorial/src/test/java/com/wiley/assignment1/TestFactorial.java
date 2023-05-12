@@ -139,7 +139,7 @@ public class TestFactorial {
 	@Test
 	@DisplayName("Validation of Input")
 	public void testIsInputNumberValid() {
-		
+	    
 		inputStream = new ByteArrayInputStream("abc".getBytes());
 	    byteArrayOutputStream = new ByteArrayOutputStream();
 	    PrintStream ps = new PrintStream(byteArrayOutputStream);
@@ -149,7 +149,7 @@ public class TestFactorial {
 	    //System.out.println("outputtext: " + outputText);
 	    String key = "Please Enter valid Input as number between 1 and 10 only, both inclusive";
 	    String output = outputText.substring(outputText.indexOf(key));
-	    //System.out.println("output: " + output);
+	    System.out.println("output: " + output);
 	    Assertions.assertEquals("Please Enter valid Input as number between 1 and 10 only, both inclusive",output);
 		
 	}
